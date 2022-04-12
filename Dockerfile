@@ -4,6 +4,5 @@ RUN pip install flask-mysql
 RUN mkdir templates
 COPY app.py /app.py
 COPY templates/*  /templates/
-COPY static/*  /static/
 RUN chmod -R a+rwx templates
 CMD ["python","app.py"]
