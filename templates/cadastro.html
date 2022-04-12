@@ -1,0 +1,22 @@
+{% extends 'template.html' %}
+{% block conteudo %}
+<form action="/cadastrar">
+    <div class="form-group">
+        <label for="nome">Nome Aluno</label>
+        <input type="text" name="nome" id="nome" placeholder="escreva seu nome">
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="escreva seu e-mail">
+    </div>
+
+    <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco" placeholder="escreva seu endereço">
+    </div>
+
+
+    <button type="submit">Cadastrar</button>
+</form>
+{% endblock %}
