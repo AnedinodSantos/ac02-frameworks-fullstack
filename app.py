@@ -32,7 +32,7 @@ def cadastrar_aluno():
     cursor.execute('insert into aluno (nome, email, endereco) VALUES (%s, %s, %s)', ( nome,email,endereco))
     conn.commit()
 
-    return redirect('index.html')
+    return redirect('/')
 
 @app.route('/lista')
 def lista_alunos():
