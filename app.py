@@ -1,5 +1,5 @@
 import os
-from flask import Flask, redirect, render_template, request
+from flask import Flask, redirect, render_template, request, url_for
 from flaskext.mysql import MySQL
 
 
@@ -32,7 +32,7 @@ def cadastrar_aluno():
     cursor.execute('insert into aluno (nome, email, endereco) VALUES (%s, %s, %s)', ( nome,email,endereco))
     conn.commit()
 
-    return redirect('/')
+    return redirect(url_for('index'))
 
 @app.route('/lista')
 def lista_alunos():
