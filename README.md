@@ -20,7 +20,3 @@ Repositório para a entrega da atividade continua da matéria de fremeworks-full
     - o docker vai executar os comando do Dockerfile criando uma imagem com esse repositório
 - docker run --link db:db -p 5000:5000 -d python-web -> com esse comando rodamos a nossa imagem recém criada linkando ela com o container do banco mysql
 - agora podemos acessar a porta 5000 que dá acesso a nossa aplicação
-
-### Prints da aplicação rodando no Docker labs
-
-
